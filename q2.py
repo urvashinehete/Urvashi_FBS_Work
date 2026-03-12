@@ -1,9 +1,8 @@
-#take length as 1 and breadth as b of a rectangle
+#input temprature in celsius
+c = float(input("Enter temerature in celsius:"))
 
-l=50
-b=90
+#convert the farenheit
+f = (9* c / 5) + 32
 
-#area is considerd as A
-
-A=l*b
-print('Area of a given rectangle is',A)
+#Display result
+print("Temperature in Farenheit =",f)

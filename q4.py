@@ -1,12 +1,15 @@
-#program to calculate simple intrest
+#Area of tringle
+base = float(input("Enter base of triangle:"))
+height = float(input("Enter height of triangle"))
 
-p=float(input("Enter principal value:"))
-t=float(input("Enter time:"))
-r=float(input("Enter rate of intrest:"))
+#Calculate area of triangle
+area_triangle = 0.5 *base *height
+print("Area of Triangle=",area_triangle)
 
-si=(p*r*t)/100
+#input for reactangle
+length = float(input("Enter length of rectangle:"))
+breadth = float(input("Enter length of rectangle:"))
 
-print("Simple intrest:",si)
-
-
-
+#calculate area of rectangle
+area_rectangle = length * breadth
+print("Area of Rectangle =",area_rectangle)

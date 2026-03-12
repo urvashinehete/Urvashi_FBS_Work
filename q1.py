@@ -1,15 +1,10 @@
-# taking marks of 5 subjects
+# Input time from user 
+hours = int(input("Enter hours:"))
+minutes = int(input("Enter minutes:"))
+seconds = int(input("Enter seconds:"))
 
-marathi=84
-hindi=76
-english=70
-math=69
-sanskrit=90
+#Convert into total second
+total_seconds = hours*3600 + minutes*60 + seconds
 
-#calculation total and percentage
-total=marathi+hindi+english+math+sanskrit
-percentage=(total/500)*100
-
-#display result
-print("total marks=",total)
-print("percentage=",percentage,"%")
+#output result
+print("Total seconds =",total_seconds)

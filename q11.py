@@ -1,6 +1,8 @@
-#program area and circumference of circle
-
-radius=float(input("enter the radius:"))
-pi=3.14
-circumference=2*pi**radius
-print(f"the circumference of the circle is:{circumference}")
+amount = int(input("Enter the amount:"))
+notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]
+print("Minimum number of notes:")
+for note in notes:
+    count = amount // note 
+    if count > 0:
+        print(note, ":", count)
+        amount = amount % note

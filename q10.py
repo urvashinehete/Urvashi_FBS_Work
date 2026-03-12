@@ -1,8 +1,13 @@
-side=float(input("Enter the of triangle"))
-#enter the side of triangle
-#multiply side to side
+#input three digit numbers
+num = int(input("Enter a three digit number: "))
 
-area=(1.732*side*side)/4
-#then divide by 4
+#extract digits
+digit1 = num // 100
+digit2 = (num// 10) % 10
+digit3 = num % 10
 
-print("Area=",area)
+#Reverse number 
+reverse = (digit3 * 100) + (digit2 * 10)  + digit1
+
+#Display reuslt
+print("Reversed number =", reversed)

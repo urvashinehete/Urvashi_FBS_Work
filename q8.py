@@ -1,15 +1,16 @@
-#program to convert into yer,week,days
+#Input two numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-print("Enter the no of Days:")
-num=int(input())
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
 
-year=int(num/365)
-week=int((num%365)/7)
-days=int((num%365)%7)
+#Swapping using third variable
+temp = a
+a = b
+b = temp
 
-print("Total Number of Year(s):")
-print(year)
-print("Total Number of Week(s):")
-print(week)
-print("Total Number of Day(s):")
-print(days)
+print("After swapping:")
+print("a =", a)
+print("b =", b)

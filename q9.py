@@ -1,10 +1,14 @@
-#program enter base and height of a triangle and find area
+#Input two numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number"))
 
-base=float(input("Enter the base of the triangle:"))
-height=float(input("Enter the height of the triangle"))
+print("Before swapping:")
+print("a =", a)
+print("b =", b)
 
-#calculate using formula
-area=0.5*base*height
+#swapping
+a, b = b,a
 
-#Display result
-print("Area of triangle is:",area)
+print("After swapping:")
+print("a =", a)
+print("b =", b)

@@ -1,11 +1,13 @@
-a=1
-b=-5
-c=6
+#Input three degit number
+num = int(input("enter a three digit number: "))
 
-d = b ** 2 - 4 * a * c
-#print(d)
-r1 = (- b + d ** 0.5)/(2 * a)
-print(r1)
+#Extract digits
+digit1 = num // 100
+digit2 = (num // 10) % 10
+digit3 = num % 10
 
-r2=(- b - d** 0.5) / (2 * a)
-print(r2)
+#calculate sum
+sum_digits = digit1 + digit2 +digit3
+
+#display result
+print("sum of digit=", sum_digits)

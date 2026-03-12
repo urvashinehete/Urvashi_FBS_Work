@@ -1,9 +1,16 @@
-#program to find third angle of a triangle
+#Input basic salary
+basic = float(input("Enter basic salary:"))
 
-a=float(input('Enter the First Angle of a Triangle:'))
-b=float(input('Enter the Second Angle of a Triangle:'))
+#calculate allowances
+da = 0.10 * basic
+ta = 0.12 * basic
+hra = 0.15 * basic
 
-#Finding the Third Angle
-c=180-(a+b)
+#calculate total salary
+total_salary = basic + da + ta + hra
 
-print("Third Angle of a Triangle",c)
+#Display result
+print("DA =", da)
+print("TA =", ta)
+print("HRA =", hra)
+print("Total Salary =", total_salary)

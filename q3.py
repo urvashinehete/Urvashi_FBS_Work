@@ -1,11 +1,16 @@
-#input two number
+#input distance
+feet = float(input("Enter distance in feet:"))
+inches = float(input("Enter distance in inches:"))
 
-n1=int("30")
-n2=int("60")
+#convert feet to inches
+total_inches = (feet * 12) + inches
 
-#calculate quotient and remainder
-quotient=n1/n2
-remainder=n1%n2
+#convert inches to meters
+meters = total_inches * 0.0254
 
-print("quotient:",quotient)
-print("remainder:",remainder)
+#convert meters to centimeters 
+centimeters = meters * 100
+
+#display result
+print("Distance in meters", meters)
+print("Distance in centimeters =",centimeters)
